@@ -10,6 +10,6 @@ terraform {
 
 resource "null_resource" "parallel_run" {
     provisioner "local-exec" {
-        command = "sleep 10"
+        command = "ls -l; whoami; uname -a; sleep 10"
     }
 }
